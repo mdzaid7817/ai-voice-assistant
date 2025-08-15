@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conversational AI Agent</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/static/style.css" rel="stylesheet" />
+</head>
+<body class="bg-light">
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow p-4 text-center" style="max-width: 400px; width: 100%;">
+      <h4 class="mb-3">🤖 Voice Assistant</h4>
+      <p class="mb-4 text-muted">Tap the mic, speak your question, and I'll respond.</p>
+
+      <!-- Single toggle button -->
+      <button id="recordBtn" class="btn btn-primary btn-lg w-100">
+        🎙 Start Talking
+      </button>
+
+      <!-- Hidden audio player -->
+      <audio id="audioPlayer" hidden></audio>
+
+      <!-- Status display -->
+      <div id="statusDisplay" class="text-info mt-4">Ready to chat!</div>
+    </div>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
